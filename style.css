@@ -9,11 +9,103 @@ body {
     padding: 1rem;
     border-left: 1px solid #333;
     border-right: 1px solid #333;
+    background-color: whitesmoke;
 }
 
-th, td, caption {
+.homeh1{
+    color: #333;
+    margin-left: 1.5rem;
+    margin-right: 1rem;
+    border: 2px solid #333;
+    border-radius: 1rem 2rem 1rem 2rem;
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+.hoursh1{
+    color: #333;
+    margin-left: 2rem;
+    margin-right: 3rem;
+    border: 2px solid #333;
+    border-radius: 1rem 2rem 1rem 2rem;
+    padding: 1rem 0 1rem 3rem;
+}
+
+.contacth1{
+    color: #333;
+    margin-left: 1.5rem;
+    margin-right: 1rem;
+    border: 2px solid #333;
+    border-radius: 1rem 2rem 1rem 2rem;
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+
+
+li {
+    list-style-type: none;
+    line-height: 1.8rem;
+}
+
+li a{
+    text-decoration: none;
+}
+
+li :visited,
+li :focus{
+    color:#333;
+    background-color: tomato;
+    cursor: pointer;
+}
+
+figure{
+    margin-left: 28%;
+}
+
+nav a,nav figcaption{
+    color: #333
+}
+
+
+th, td, caption{
     border: 1px solid #333;
     font-family: 'Courier New', Courier, monospace;
     border-collapse: separate;
     padding: 0.5rem;
+    color: #333;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+}
+
+table{
+    margin-left: 30%;
+}
+
+caption:hover{
+    color: whitesmoke;
+    background: tomato;
+}
+
+td:hover{
+    color: whitesmoke;
+    background: tomato;
+}
+
+article a,
+article a:visited{
+    color: #333;
+    margin-left: 30%;
+    cursor: pointer;
+}
+
+dl{
+    line-height: 2rem;
+}
+
+.backtotop a{
+    color:#333;
+    background-color: tomato;
+    cursor: pointer;
 }
