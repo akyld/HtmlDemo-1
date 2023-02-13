@@ -50,8 +50,13 @@ li a{
     text-decoration: none;
 }
 
+li a:hover{
+    color: rgb(250, 119, 96);
+}
+
 li :visited,
-li :focus{
+li :focus
+li :active{
     color:#333;
     background-color: tomato;
     cursor: pointer;
