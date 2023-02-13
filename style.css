@@ -108,9 +108,3 @@ article a:visited{
 dl{
     line-height: 2rem;
 }
-
-.backtotop a{
-    color:#333;
-    background-color: tomato;
-    cursor: pointer;
-}
