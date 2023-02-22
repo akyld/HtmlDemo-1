@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Kaan Yıldırım">
     <meta name="description" content="The official website for The Little Pizza Shop">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
@@ -11,96 +12,87 @@
 </head>
 
 <body>
-    <header>
-        <h1 class="homeh1">Welcome to The Little Pizza Shop</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About LPS</a></li>
-                <li><a href="#menu">Our Menu</a></li>
+    <header class="header">
+        <h1 class="header__h1">Little Pizza Shop</h1>
+        <nav class="header__nav">
+            <ul class="header__ul">
+                <li><a href="#menu">Menu</a></li>
                 <li><a href="hours.html">Store Hours</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About LPS</a></li>
             </ul>
-            <figure>
-                <img src="img/pizza.jpg" alt="Pizza">
-                <figcaption>Special Pizza and Much More</figcaption>
-            </figure>
-
-
         </nav>
-
     </header>
-    <hr>
-    <main>
-        <article id="about"> <!--About Kısmı Başlangıç -->
-            <h2>About LPS</h2>
-            <p>LPS was founded in <time datetime="2022">2022</time>. Our shop
-                was built from a <strong>love of pizzas</strong> . We hope our shop adds a unique and interesting
-                place to our little town.</p>
-            <aside>
-                <h3>Pizza Trivia</h3>
-                <details>
-                    <summary>When did pizza first appear in the United Stated?</summary>
-                    <p>The origins of pizza, as we know it today, can be traced back to 17th century Naples, and it was
-                        brought to America by Italian immigrants in the late 19th century</p>
-
-
-                </details>
-            </aside>
-        </article> <!--About Kısmı bitiş-->
-        <hr>
-        <article id="menu"> <!--Menü Kısmı başlangıç -->
-            <h2>Our Menu</h2>
-            <table>
+    
+    <section class="hero">
+        <h2 class="hero__h2">Benvenuto!</h2>
+        <figure>
+            <img src="img/pizza.jpg" alt="Pizza" width="1000" height="750">
+            <figcaption class="offscreen">Special Pizza and Much More</figcaption>
+        </figure>
+    </section>
+    
+    <main class="main">
+        <article id="menu" class="main__article menu"> <!--Menü Kısmı başlangıç -->
+            <h2 class="menu__h2">Our Menu</h2>
+            <table class="menu__container">
+                <caption class="offscreen">Our Pizza's</caption>
                 <thead>
-                    <caption>Our Pizzas</caption>
                     <tr>
-                        <td>Pizzas</td>
-                        <td><abbr title="Quantity">Qty</abbr></td>
-                        <td>Price</td>
+                        <th class="menu__header">Pizza's</th>
+                        <th class="menu__header">Quantity</th>
+                        <th class="menu__header">Price</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td rowspan="3">Crunchy</td>
-                        <td>1</td>
-                        <td>$1.50</td>
+                        <th class="menu__item menu__thick" scope="row" rowspan="3">Thick</th>
+                        <td class="menu__item">1</td>
+                        <td class="menu__item">$1.50</td>
                     </tr>
                     <tr>
-                        <td>2</td>
-                        <td>$2.50</td>
+                        <td class="menu__item">2</td>
+                        <td class="menu__item">$2.50</td>
                     </tr>
                     <tr>
-                        <td>3</td>
-                        <td>$3.25</td>
+                        <td class="menu__item">3</td>
+                        <td class="menu__item">$3.25</td>
                     </tr>
                     <tr>
-                        <td rowspan="3">Soft</td>
-                        <td>1</td>
-                        <td>$2.00</td>
+                        <th class="menu__item menu__thin" scope="row" rowspan="3">Thin</th>
+                        <td class="menu__item">1</td>
+                        <td class="menu__item">$2.00</td>
                     </tr>
                     <tr>
-                        <td>2</td>
-                        <td>$3.50</td>
+                        <td class="menu__item">2</td>
+                        <td class="menu__item">$3.50</td>
                     </tr>
                     <tr>
-                        <td>3</td>
-                        <td>$4.50</td>
+                        <td class="menu__item">3</td>
+                        <td class="menu__item">$4.50</td>
                     </tr>
                 </tbody>
                 <tfoot>
                     <tr>
-                        <td colspan="3">Chips & Salsa $2</td>
+                        <td class="menu__item menu__cs" colspan="3">Chips & Salsa $2</td>
                     </tr>
                 </tfoot>
             </table>
-            <br>
-            <a href="/">Back to Top</a>
+            
+            <p class="center">
+                <a href="/">Back to Top</a>
+            </p>
+            
         </article> <!--Menü Kısmı bitiş -->
-
     </main>
+    
     <hr>
-    <footer>
-        <p>Copyright &copy; The Little Pizza Shop</p>
+    
+    <footer class="footer">
+        <p>
+            <span class="nowrap">Copyright &copy;</span> 
+            <span class="nowrap">Little Pizza Shop</span>
+        </p>
     </footer>
 
 </body>

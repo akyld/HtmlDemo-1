@@ -7,45 +7,49 @@
     <meta name="description" content="The official website for The Little Pizza Shop">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <title>The Little Pizza Shop</title>
+    <title>Little Pizza Shop</title>
 
 </head>
 
 <body>
-    <header>
-        <h1 class="hoursh1">The Little Pizza Shop Hours</h1>
-        <nav>
-            <ul>
+    <header class="header">
+        <h1 class="header__h1">Little Pizza Shop</h1>
+        <nav class="header__nav">
+            <ul class="header__ul">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="index.html#about">About LPS</a></li>
-                <li><a href="index.html#menu">Our Menu</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="index.html#menu">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About LPS</a></li>
             </ul>
-            <figure>
-                <img src="img/pizzahours.jpg" alt="Pizza">
-                <figcaption>Tasty Slice of Our Pizza</figcaption>
-            </figure>
-
-
         </nav>
-
     </header>
-    <hr>
-    <main>
-        <dl>
+    
+    
+    <section class="hero">
+        <figure>
+            <img src="img/pizzahours.jpg" alt="Pizza" width="1080" height="1080">
+            <figcaption class="offscreen">Tasty Slice of Our Pizza</figcaption>
+        </figure>
+    </section>
+    
+    
+    <main class="main">
+        <article class="main__article">
+        <dl class="data__list">
             <dt>Sunday-Thursday</dt>
             <dd>11am - 9pm</dd>
 
-            <dt>Friday-Saturdayday</dt>
+            <dt>Friday-Saturday</dt>
             <dd>11am - 11pm</dd>
         </dl>
-        <a href="hours.html">Back To Top</a>
+        </article>
     </main>
 
-    <hr>
-
-    <footer>
-        <p>Copyright &copy; The Little Pizza Shop</p>
+    <footer class="footer">
+        <p>
+            <span class="nowrap">Copyright &copy;</span> 
+            <span class="nowrap">Little Pizza Shop</span>
+        </p>
     </footer>
 
 </body>
